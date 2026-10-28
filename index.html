@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spreadsheet.com: what it was</title>
+<meta name="description" content="Spreadsheet.com was an online spreadsheet that worked like a database and project manager. Here is what it was, who built it, and a video of it in action.">
+<style>
+  :root {
+    --red: #e3120b;
+    --ink: #121212;
+    --body: #2b2b2b;
+    --muted: #5f5f5f;
+    --rule: #cfcfcf;
+    --panel: #f1f1f1;
+    --serif: "Milo Serif Text", Charter, "Bitstream Charter", Georgia, "Times New Roman", serif;
+    --sans: "Econ Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: #fff;
+    color: var(--body);
+    font: 1.18rem/1.6 var(--serif);
+  }
+  .tag {
+    width: 64px;
+    height: 14px;
+    background: var(--red);
+    margin: 0 0 0 max(0px, calc(50% - 340px));
+  }
+  main { max-width: 680px; margin: 0 auto; padding: 36px 24px 72px; }
+  .kicker {
+    font: 700 0.95rem/1.2 var(--sans);
+    color: var(--red);
+    margin: 0 0 12px;
+  }
+  h1 {
+    font: 700 clamp(2.4rem, 8vw, 3.6rem)/1.05 var(--sans);
+    letter-spacing: -0.015em;
+    color: var(--ink);
+    margin: 0 0 20px;
+  }
+  .lede {
+    font: 400 1.35rem/1.4 var(--serif);
+    color: #3a3a3a;
+    margin: 0 0 28px;
+    padding-bottom: 8px;
+    border-bottom: 0px solid var(--rule);
+  }
+  .status {
+    font: 400 1rem/1.5 var(--sans);
+    background: var(--panel);
+    border-top: 3px solid var(--red);
+    padding: 16px 18px;
+    margin: 0 0 40px;
+    color: var(--ink);
+  }
+  h2 {
+    font: 700 1.55rem/1.2 var(--sans);
+    color: var(--ink);
+    margin: 44px 0 14px;
+  }
+  p { margin: 0 0 1.1rem; }
+  .first::first-letter {
+    float: left;
+    font: 700 4.6rem/0.8 var(--sans);
+    color: var(--red);
+    padding: 0.35rem 0.5rem 0 0;
+  }
+  .video {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    background: #000;
+    margin: 20px 0 10px;
+  }
+  .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .poster { position: absolute; inset: 0; display: block; }
+  .poster img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .poster span { position: absolute; left: 12px; bottom: 12px; background: var(--red); color: #fff; font: 700 0.95rem/1 var(--sans); padding: 9px 12px; }
+  .alt { font: 400 0.9rem/1.4 var(--sans); color: var(--muted); }
+  a { color: var(--red); text-underline-offset: 3px; }
+  a:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
+  dl.timeline { margin: 8px 0 0; border-top: 2px solid var(--ink); font-family: var(--sans); font-size: 1rem; }
+  .timeline div {
+    display: grid;
+    grid-template-columns: 9em 1fr;
+    gap: 16px;
+    padding: 11px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .timeline dt { font-weight: 700; color: var(--red); }
+  .timeline dd { margin: 0; color: var(--body); }
+  footer {
+    margin-top: 48px;
+    padding-top: 16px;
+    border-top: 0px solid var(--rule);
+    font: 400 0.88rem/1.4 var(--sans);
+    color: var(--muted);
+  }
+  footer p { margin: 0; }
+  @media (max-width: 520px) {
+    body { font-size: 1.06rem; }
+    .timeline div { grid-template-columns: 1fr; gap: 2px; }
+  }
+</style>
+</head>
+<body>
+<div class="tag" aria-hidden="true"></div>
+<main>
+  <p class="kicker">A short history</p>
+  <h1>Spreadsheet.com</h1>
+  <p class="lede">Spreadsheet.com was an online spreadsheet that worked like a database and a project management system, so teams could run real work in a tool they already knew how to use. At its peak Spreadsheet.com employed 34 people with over 1,000 customers, including Walmart, Bosch, FedEx, Roche, Fujifilm, and Saint-Gobain.</p>
+
+  <p class="status">Spreadsheet.com is no longer available. Veeva Systems acquired the company in January 2024 and hired the Spreadsheet.com team. The service was shut down on May 31, 2024. This page is a short record of what it was.</p>
+
+  <h2>What it was</h2>
+  <p>Spreadsheet.com looked and behaved like a familiar spreadsheet, with formulas, rows, and columns. Underneath, it added the structure of a database and the tools of a project management system: views such as Kanban, Calendar, and Gantt, dependencies between tasks, rich cell data types, and automations that could trigger actions in other apps.</p>
+  <p>The idea was to stop teams from splitting their work between a spreadsheet and a pile of separate apps. People kept the spreadsheet they already knew and gained the capabilities they would otherwise have needed new software for. People used it for project tracking, customer lists, hiring pipelines, and similar work.</p>
+
+  <h2>See it in action</h2>
+  <div class="video" id="video">
+    <iframe
+      src="https://www.youtube.com/embed/Ma2etdAUUFw?rel=0"
+      title="Introduction to Spreadsheet.com"
+      loading="lazy"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen></iframe>
+  </div>
+  <p class="alt">Video not loading? <a href="https://www.youtube.com/watch?v=Ma2etdAUUFw" rel="noopener">Watch it on YouTube</a>.</p>
+
+  <h2>Who created it</h2>
+  <p>Spreadsheet.com was co-founded by <a href="https://www.linkedin.com/in/mrobinson/" rel="noopener">Matt Robinson</a> and <a href="https://www.linkedin.com/in/murali-mohan-4544134/" rel="noopener">Murali Mohan</a>. Robinson was previously CTO at <a href="https://www.progress.com" rel="noopener">Progress Software</a> and had founded two earlier companies: Rollbase, a low-code application platform acquired by Progress Software, and Recruitforce.com, an applicant tracking service acquired by Taleo, now part of <a href="https://www.oracle.com" rel="noopener">Oracle</a>. Mohan was previously a director of engineering at <a href="https://www.progress.com" rel="noopener">Progress</a>.</p>
+  <p>The company was based in Saratoga, California, and was backed by investors including <a href="https://www.firstround.com" rel="noopener">First Round Capital</a> and <a href="https://www.sparkcapital.com" rel="noopener">Spark Capital</a>. Lotus founder <a href="https://en.wikipedia.org/wiki/Mitch_Kapor" rel="noopener">Mitch Kapor</a> and former Microsoft executive <a href="https://en.wikipedia.org/wiki/Steven_Sinofsky" rel="noopener">Steven Sinofsky</a> were among its supporters.</p>
+
+  <h2>History</h2>
+  <dl class="timeline">
+    <div><dt>Oct, 2017</dt><dd>Spreadsheet.com founded.</dd></div>
+    <div><dt>Aug, 2019</dt><dd>Early access opened.</dd></div>
+    <div><dt>Sept, 2021</dt><dd>Seed funding round announced.</dd></div>
+    <div><dt>Jan, 2023</dt><dd>Added AI formulas that use OpenAI models inside the spreadsheet.</dd></div>
+    <div><dt>Jan, 2024</dt><dd>Acquired by <a href="https://www.veeva.com" rel="noopener">Veeva Systems</a>.</dd></div>
+    <div><dt>May, 2024</dt><dd>Service shut down.</dd></div>
+  </dl>
+
+  <footer>
+    <p>Spreadsheet.com is a historical record and does not offer a spreadsheet service.</p>
+  </footer>
+<script>
+  // YouTube refuses to play embeds on pages opened from disk (file://), so show a link instead.
+  if (location.protocol === "file:") {
+    var v = document.getElementById("video");
+    v.innerHTML = '<a class="poster" href="https://www.youtube.com/watch?v=Ma2etdAUUFw" rel="noopener"><img src="https://i.ytimg.com/vi/Ma2etdAUUFw/hqdefault.jpg" alt="Watch the Spreadsheet.com introduction on YouTube"><span>Watch on YouTube</span></a>';
+  }
+</script>
+</main>
+</body>
+</html>
